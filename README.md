@@ -45,6 +45,7 @@ In this challenge you build an almost real-time data pipeline that regularily ex
    ```
 2. Connect to your remote machine with `ssh` and check if the script is in the home directory of your server.
 3. Check that the script also runs on the remote machine!
+   - you might have to install a german locale, type in: `sudo locale-gen "de_DE.UTF-8"`
 
 
 ### Task 5: Setup a Cronjob (https://crontab.guru/)
