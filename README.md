@@ -53,7 +53,7 @@ In this challenge you build an almost real-time data pipeline that regularily ex
 1. Type in `crontab -e`. This will open the `nano` text editor and allows you to edit your cron jobs.
 2. Add a line to the crontab:
    ```
-   */5 * * * * /home/ubuntu/miniconda3/bin/python ~/store_info.py > ~/log.log  2>&1
+   */5 * * * * /home/ubuntu/miniconda3/bin/python ~/store_info.py >> ~/log.log  2>&1
    ```   
 3. Save and exit the `nano` text editor. 
 4. Check that the log output is written to a file `log.log` in the server's home directory. 
@@ -63,7 +63,7 @@ In this challenge you build an almost real-time data pipeline that regularily ex
 
 - What means the code `*/5 * * * *`?
 - What is happening if you type in `/home/ubuntu/miniconda3/bin/python ~/store_info.py`
-- What means the line `> ~/log.log  2>&1`?
+- What means the line `>> ~/log.log  2>&1`?
 
 
 
