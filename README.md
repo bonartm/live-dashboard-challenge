@@ -41,7 +41,7 @@ In this challenge you build an almost real-time data pipeline that regularily ex
 
 1. From your local machine, use the `scp` command, copy `store_info.py` from your local machine to the server:
    ```
-   scp -i ~/.ssh/mykey.key store_info.py ubuntu@hostname:/home/ubuntu/store_info.py
+   scp -i ~/.ssh/mykey.pem ./store_info.py ubuntu@hostname:/home/ubuntu/store_info.py
    ```
 2. Connect to your remote machine with `ssh` and check if the script is in the home directory of your server.
 3. Check that the script also runs on the remote machine!
