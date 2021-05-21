@@ -3,3 +3,4 @@ beautifulsoup4
 sqlalchemy
 requests
 lxml
+psycopg2-binary
