@@ -1,6 +1,8 @@
 locale.setlocale(locale.LC_TIME, 'de_DE.UTF-8')
 
-from bs4 import BeautifulSoup 
+from bs4 import BeautifulSoup
+from datetime import datetime
+
 
 height = height.replace(',', '.')
 
@@ -17,7 +19,7 @@ df = pd.DataFrame({'timestamp': [date + ' ' + time], 'height': [float(???)]})
 
 import pandas as pd
 
-print(f'completed at {df['timestamp']')
+print(f"fetched new data at {datetime.now()}")
 
 from sqlalchemy import ???
 
