@@ -4,8 +4,8 @@ from bs4 import BeautifulSoup
 
 height = height.replace(',', '.')
 
-## postgres://<username>:<password>@<hostname>/<dbname>
-uri = 'postgres://postgres:postgres@localhost/postgres'
+## postgresql://<username>:<password>@<hostname>/<dbname>
+uri = 'postgresql://postgres:postgres@localhost/postgres'
 
 df.to_sql(???, ???, if_exists='append', index=False)
 

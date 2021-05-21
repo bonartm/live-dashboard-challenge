@@ -21,8 +21,8 @@ date = soup.find('Datum').get_text()
 
 
 
-## postgres://<username>:<password>@<hostname>/<dbname>
-uri = 'postgres://postgres:postgres@localhost/postgres'
+## postgresql://<username>:<password>@<hostname>/<dbname>
+uri = 'postgresql://postgres:postgres@localhost/postgres'
 engine = create_engine(uri)
 
 df = pd.DataFrame({'timestamp': [date + ' ' + time], 'height': [float(height)]})
