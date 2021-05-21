@@ -14,7 +14,7 @@ In this challenge you build an almost real-time data pipeline that regularily ex
 
 1. Fill in a valid database `uri`.
 2. Test the script locally.
-3. Is the data stored in the database?
+3. Check that the data stored in your database!
 
 
 ### Task 3: Setup a python environment on the server
@@ -24,24 +24,25 @@ In this challenge you build an almost real-time data pipeline that regularily ex
    ```
    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
    ```
-3.  Install miniconda:
+3.  Install miniconda by exectuting the installation script:
       ```
       bash Miniconda3-latest-Linux-x86_64.sh
       ```
       Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.
    
-4. Restart the terminal and connect to the server. 
+4. Restart the terminal and connect to the server again. 
 5. Check if the installation was successful by typing in `which python`. This should show you the path `/home/ubuntu/miniconda3/bin/python`
 6. Using `pip`, install the required packages `beautifulsoup4`, `pandas`, `sqlalchemy` and `requests`
 
 
 ### Task 4: Copy the script to the server and test it
 
-1. With the `scp` command, copy `store_info.py` from your local machine to the server:
+1. From your local machine, use the `scp` command, copy `store_info.py` from your local machine to the server:
    ```
    scp -i ~/.ssh/mykey.key store_info.py ubuntu@hostname:/home/ubuntu/store_info.py
    ```
-2. Connect to your remote machine with `ssh` and check if the script is also running on your server!
+2. Connect to your remote machine with `ssh` and check if the script is in the home directory of your server.
+3. Check that the script also runs on the remote machine!
 
 
 ### Task 5: Setup a Cronjob (https://crontab.guru/)
@@ -50,7 +51,18 @@ In this challenge you build an almost real-time data pipeline that regularily ex
 2. Add a line to the crontab:
    ```
    */5 * * * * /home/ubuntu/miniconda3/bin/python ~/store_info.py > ~/log.log  2>&1
-   ```
+   ```   
 3. Save and exit the `nano` text editor. 
 4. Check that the log output is written to a file `log.log` in the server's home directory. 
+
+
+### Cronjobs
+
+- What means the code `*/5 * * * *`?
+- What is happening if you type in `/home/ubuntu/miniconda3/bin/python ~/store_info.py`
+- What means the line `> ~/log.log  2>&1`?
+
+
+
+
 
