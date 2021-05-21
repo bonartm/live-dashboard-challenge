@@ -34,7 +34,7 @@ In this challenge you build an almost real-time data pipeline that regularily ex
    
 5. Restart the terminal and connect to the server again. 
 6. Check if the installation was successful by typing in `which python`. This should show you the path `/home/ubuntu/miniconda3/bin/python`
-7. Using `pip`, install the required packages `beautifulsoup4`, `pandas`, `sqlalchemy` and `requests`
+7. Using `pip`, install the required packages `beautifulsoup4`, `pandas`, `sqlalchemy`, `lxml` and `requests` (you also find them in the `requirements.txt`).
 
 
 ### Task 4: Copy the script to the server and test it
