@@ -17,7 +17,7 @@ df = pd.DataFrame({'timestamp': [date + ' ' + time], 'height': [float(???)]})
 
 import pandas as pd
 
-print('completed')
+print(f'completed at {df['timestamp']')
 
 from sqlalchemy import ???
 
