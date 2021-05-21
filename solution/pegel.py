@@ -1,4 +1,5 @@
 import locale
+from datetime import datetime
 import pandas as pd
 from sqlalchemy import create_engine
 from bs4 import BeautifulSoup 
@@ -34,5 +35,5 @@ df['timestamp'] = pd.to_datetime(df['timestamp'], format='%d. %b %Y %H:%M')
 df.to_sql('data', engine, if_exists='append', index=False)
 
 
-print('completed')
+print(f"fetched new data at {datetime.now()}")
 
