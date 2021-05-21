@@ -29,10 +29,12 @@ In this challenge you build an almost real-time data pipeline that regularily ex
       bash Miniconda3-latest-Linux-x86_64.sh
       ```
       Follow the prompts on the installer screens. If you are unsure about any setting, accept the defaults. You can change them later.
+      
+4.  Type in `~/miniconda3/bin/conda init` to initialize conda.
    
-4. Restart the terminal and connect to the server again. 
-5. Check if the installation was successful by typing in `which python`. This should show you the path `/home/ubuntu/miniconda3/bin/python`
-6. Using `pip`, install the required packages `beautifulsoup4`, `pandas`, `sqlalchemy` and `requests`
+5. Restart the terminal and connect to the server again. 
+6. Check if the installation was successful by typing in `which python`. This should show you the path `/home/ubuntu/miniconda3/bin/python`
+7. Using `pip`, install the required packages `beautifulsoup4`, `pandas`, `sqlalchemy` and `requests`
 
 
 ### Task 4: Copy the script to the server and test it
